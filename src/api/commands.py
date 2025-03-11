@@ -24,7 +24,7 @@ def setup_commands(app):
             user.is_active = True
             db.session.add(user)
             db.session.commit()
-            print("User: ", user.email, " created.")
+            print("user: ", user.email, " created.")
         print("All test users created")
 
     @app.cli.command("insert-test-data")

@@ -29,6 +29,8 @@ const injectContext = PassedComponent => {
 		*/
 		useEffect(() => {
 			state.actions.getMessage();  // Calling this function from the flux.js actions
+			state.actions.getUserProfile();
+			state.actions.getArtists();
 		}, []);
 
 		// The initial value for the context is not null anymore, but the current state of this component,
